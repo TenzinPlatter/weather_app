@@ -1,0 +1,26 @@
+{
+  "name": "Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Tenzin Platter",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1"
+  },
+  "scripts": {
+    "build": "webpack --config ./webpack/webpack.prod.js",
+    "dev": "webpack serve --config ./webpack/webpack.dev.js",
+    "deploy": "bash scripts/deploy.sh"
+  }
+}
